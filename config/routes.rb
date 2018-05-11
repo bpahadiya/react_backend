@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       resources :users , defaults: {format: :json} do
-        post :login, on: :collection
+        post :signin, on: :collection
         post :signup, on: :collection
       end
     end
